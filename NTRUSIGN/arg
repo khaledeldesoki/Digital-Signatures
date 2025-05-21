@@ -1,0 +1,10 @@
+  -g 'filename'            Generate a key pair with the given name in the specified path.
+  -ip 'path to public key'   Import a public key from the specified file.
+  -is 'path to private key'  Import a private key from the specified file.
+  -s 'file'                   Sign the specified file using the private key.
+  -v 'file'                   Verify the signature of the specified file using the public key.
+
+
+ python  NTRUSIGN/main.py -g my_keys
+ python  NTRUSIGN/main.py -is my_keys_priv.asc -s message
+ python  NTRUSIGN/main.py -ip my_keys_pub.asc -v message
